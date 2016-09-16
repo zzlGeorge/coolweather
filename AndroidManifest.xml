@@ -24,6 +24,10 @@
         	</intent-filter>
         </activity>
         
+        <activity android:name="com.app.coolweather.activity.WeatherActivity">
+            
+        </activity>
+        
     </application>
 
 </manifest>
