@@ -11,7 +11,7 @@
     
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/cool"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         
@@ -27,6 +27,14 @@
         <activity android:name="com.app.coolweather.activity.WeatherActivity">
             
         </activity>
+        
+        <service android:name="com.app.coolweather.service.AutoUpdateService">
+            
+        </service>
+        
+        <receiver android:name="com.app.coolweather.receiver.AutoUpdateReceiver">
+            
+        </receiver>
         
     </application>
 
