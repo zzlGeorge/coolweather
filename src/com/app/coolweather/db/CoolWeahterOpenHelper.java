@@ -8,22 +8,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class CoolWeahterOpenHelper extends SQLiteOpenHelper {
 
 	//Province
-	public static final String CREATE_PROVINCE = "create table Province{"
+	public static final String CREATE_PROVINCE = "create table Province("
 			+ "id integer primary key autoincrement, "
 			+ "province_name text, "
-			+ "province_code text}";
+			+ "province_code text)";
 	//City
-	public static final String CREATE_CITY = "create table City{"
+	public static final String CREATE_CITY = "create table City("
 			+ "id integer primary key autoincrement, "
 			+ "city_name text, "
 			+ "city_code text, "
-			+ "provoince_id integer}";
+			+ "province_id integer)";
 	//County
-	public static final String CREATE_COUNTY = "create table County{"
+	public static final String CREATE_COUNTY = "create table County("
 			+ "id integer primary key autoincrement, "
 			+ "county_name text, "
 			+ "county_code text, "
-			+ "city_id integer}";
+			+ "city_id integer)";
 	
 	public CoolWeahterOpenHelper(Context context, String name,
 			CursorFactory factory, int version) {
@@ -40,7 +40,6 @@ public class CoolWeahterOpenHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
-		// TODO Auto-generated method stub
 
 	}
 
